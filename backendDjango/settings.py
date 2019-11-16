@@ -96,21 +96,21 @@ WSGI_APPLICATION = 'backendDjango.wsgi.application'
 # }
 
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME':'backenddjango',
-#         'USER':'project4user',
-#         'PASSWORD':'project4pw',
-#         'HOST':'localhost'
-#     }
-# }
-
-
-
 DATABASES = {
-    'default': os.environ.get('DATABASE_URL')
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME':'backenddjango',
+        'USER':'project4user',
+        'PASSWORD':'project4pw',
+        'HOST':'localhost'
+    }
 }
+
+
+
+# DATABASES = {
+#     'default': os.environ.get('DATABASE_URL')
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
