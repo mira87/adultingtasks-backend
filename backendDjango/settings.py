@@ -107,11 +107,6 @@ DATABASES = {
 }
 
 
-
-# DATABASES = {
-#     'default': os.environ.get('DATABASE_URL')
-# }
-
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
@@ -148,7 +143,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
+
 
 # CORS_ORIGIN_WHITELIST = (
 # 'http://localhost:3000',
@@ -209,6 +204,6 @@ CORS_ALLOW_METHODS = [
     'PUT',
 ]
 
-
+STATIC_URL = '/static/'
 # Activate Django-Heroku.
 django_heroku.settings(locals())
