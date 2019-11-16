@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('ADULTINGAPP_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -96,17 +96,17 @@ WSGI_APPLICATION = 'backendDjango.wsgi.application'
 # }
 
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME':'backenddjango',
-#         'USER':'project4user',
-#         'PASSWORD':'project4pw',
-#         'HOST':'localhost'
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME':'backenddjango',
+        'USER':'project4user',
+        'PASSWORD':'project4pw',
+        'HOST':'localhost'
+    }
+}
 
-os.environ.get('DATABASE_URL')
+# os.environ.get('DATABASE_URL')
 
 
 # Password validation
