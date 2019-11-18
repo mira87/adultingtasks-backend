@@ -1,4 +1,4 @@
 # adultingtasks-backend
 
 Welcome to my readme
-[<img src="./adultingappreadmepic.png"/>]
+<img src="./adultingappreadmepic.png"/>
